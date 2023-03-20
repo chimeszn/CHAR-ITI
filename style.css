@@ -48,5 +48,13 @@ nav {
 	clear: both;
 }
 
+.footer h1 {
+	max-width: 1100px;
+	padding: 9%;
+	margin: 2%;
+}
 
+.footer button {
+	float: right;
+}
 
