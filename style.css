@@ -3,6 +3,7 @@ html {
 }
 
 body {
+	overflow-x: hidden;
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
@@ -10,40 +11,70 @@ body {
 }
 
 header {
-	background-color: #ffffff;
-	color: #fff;
+	background-color: bisque;
+	color: bisque;
 }
 
-nav ul {
+
+.nav ul {
+	overflow: hidden ;
 	list-style: none;
 	margin: 3.5vh 4vw;
 	margin-right: 9px;
 	padding: 0;
 }
 
-nav li {
+.nav li {
 	display: inline-block;
-	margin-right: 40px;
+	margin-right: 20px;
+
 	
 }
 
-nav li:last-child {
+.nav li:last-child {
 	margin-right: 0;
 }
 
-nav a {
+.nav a {
+	display: block;
 	color: #050505;
 	text-decoration: none;
+	font-size: 17px;
 }
 
-nav {
+.nav a:hover {
+	color: black;
+}
+
+.nav .icon {
+	display: none;
+}
+
+.nav {
 	float: right;
 }
 
-.campaign-grid {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center
+@media screen and (max-width: 600px) {
+	.nav a:not(:first-child) {display: none;}
+	.nav a.icon {
+		float: right;
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.nav.responsive {position: relative;}
+	.nav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.nav.responsive a {
+		float: none;
+		display: block;
+		text-align: right;
+	}
 }
 
 .container {
@@ -53,26 +84,78 @@ nav {
 	clear: both;
 }
 
+.container h1 {
+	font-size: 225%;
+}
+
 .container img {
 	float: right;
-	width: 35vw;
+	width: 73%;
 	height: auto;
-	padding-left: 200px;
-    margin-right: -50px;
+	margin-top: -513.4px;
+    margin-right: -22%;
+}
+
+.container p {
+	font-size: 105%;
 }
 
 .container button {
-	width: 7rem;
+	width: 9rem;
 	background-color: green;
+	border: 0px;
+	border-radius: 10px;
 }
 
-.container a {
+.container button a {
 	text-decoration: none;
 	color: white;
 }
 
+.container ul {
+	list-style: none;
+	display: inline;
+	padding: 0;
+}
+
+.container li {
+	display: inline-block;
+	margin-right: 16px;
+}
+
+.container a {
+	text-decoration: none;
+	color: #050505;
+}
+
+.middle {
+	display: flex;
+	background-image: url(./images/green\ banner.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.middle img {
+	width: 9%;
+	margin-left: 10%;
+	padding-top: 1%;
+	margin-bottom: 2%;
+}
+
+.middle h1 {
+	margin-left: 1%;
+	margin-top: 4.5%;
+	padding-bottom: 2%;
+    font-size: 120%;
+	color: white;
+}
+
+.filter-white {
+	filter: invert(100%) sepia(0%) saturate(2524%) hue-rotate(226deg) brightness(121%) contrast(101%);
+}
+
 .bg-img {
-	background-image: url(https://i.ibb.co/n72tnBn/green-banner.jpg);
+	background-image: url(./images/green\ banner.jpg);
 	margin-top: 30%;
 	margin-bottom: 10%;
 	background-repeat: repeat;
@@ -83,15 +166,20 @@ nav {
 
 .bg-img h1 {
 	max-width: 1100px;
-	margin-left: 12%;
+	margin-left: 13%;
 	padding-bottom: 30px;
 	padding-top: 30px;
 	color: white;
+	font-size: 225%;
 }
 
+
 .bg-img button{
+	border: 0px;
+	border-radius: 10px;
     float: right;
-	margin-right: 3px;
+	margin-right: 13%;
+	margin-top: -120px;
 	width: 9rem;
 	background-color: orange;
 }
@@ -102,8 +190,10 @@ nav {
 
 }
 
-.bg {
+.nav {
 background: orange;
+border: 0px;
+border-bottom-left-radius: 20px;
 }
 
 .about {
