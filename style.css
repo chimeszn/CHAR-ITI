@@ -2,6 +2,7 @@ html {
 	scroll-behavior: smooth;
 }
 
+
 body {
 	overflow-x: hidden;
 	font-family: Arial, sans-serif;
@@ -15,6 +16,14 @@ header {
 	color: bisque;
 }
 
+header img {
+	max-width: 1250px;
+	margin: 0 auto;
+	clear: both;
+	float: left;
+	margin-left: 3%;
+	padding-left: 2%;
+}
 
 .nav ul {
 	overflow: hidden ;
@@ -40,6 +49,7 @@ header {
 	color: #050505;
 	text-decoration: none;
 	font-size: 17px;
+	
 }
 
 .nav a:hover {
@@ -78,26 +88,32 @@ header {
 }
 
 .container {
-	max-width: 1150px;
+	max-width: 1250px;
 	margin: 0 auto;
 	padding: 50px;
 	clear: both;
+	color: #38761d;
 }
 
 .container h1 {
 	font-size: 225%;
+	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 
 .container img {
 	float: right;
 	width: 73%;
 	height: auto;
-	margin-top: -513.4px;
+	margin-top: -569.6px;
     margin-right: -22%;
 }
 
 .container p {
-	font-size: 105%;
+	font-size: 115%;
+	font-weight: 545;
+	font-family: Helvetica;
+	
 }
 
 .container button {
@@ -128,6 +144,32 @@ header {
 	color: #050505;
 }
 
+.sub-container {
+	max-width: 1150px;
+	margin: 0 auto;
+	padding: 50px;
+	clear: both;
+	color: #38761d;
+}
+
+.sub-container img {
+	width: 40%;
+	margin-top: -40px;
+}
+
+.sub-container h2 {
+	float: right;
+	font-size: 155%;
+	margin-top: -10px;
+	margin-right: 4%;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+}
+.sub-container h2 b {
+	font-size: 16px;
+	font-weight: 640;
+}
+
 .middle {
 	display: flex;
 	background-image: url(./images/green\ banner.jpg);
@@ -152,6 +194,26 @@ header {
 
 .filter-white {
 	filter: invert(100%) sepia(0%) saturate(2524%) hue-rotate(226deg) brightness(121%) contrast(101%);
+}
+
+.sub-middle {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 50px;
+	clear: both;
+	color: #38761d;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sub-middle hr {
+	float: left;
+	width: 120px;
+
+}
+
+.sub-middle h4 {
+	font-size: 105%;
+	color: 	#353839;
 }
 
 .bg-img {
@@ -182,6 +244,9 @@ header {
 	margin-top: -120px;
 	width: 9rem;
 	background-color: orange;
+	padding-left: 5px;
+	padding-right: 5px;
+
 }
 
 .bg-img a {
@@ -193,11 +258,11 @@ header {
 .nav {
 background: orange;
 border: 0px;
-border-bottom-left-radius: 20px;
+border-bottom-left-radius: 8.6px;
 }
 
 .about {
-	max-width: 1150px;
+	max-width: 1250px;
 	margin: 0 auto;
 	padding: 80px;
 	clear: both;
