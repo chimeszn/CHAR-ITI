@@ -61,11 +61,11 @@ nav {
 	border: 0px;
 	border-bottom-left-radius: 8.6px;
 	height: 87px;	
-	padding-left: 20px;
+	padding-left: 25px;
 }
 
 a.active,a:hover {
-	background: bisque;
+	background: orange;
 	transition: .5s;
 }
 
@@ -124,7 +124,7 @@ a.active,a:hover {
 
 	nav a:hover,a.active {
 		background: none;
-		color: blue;
+		color: orange;
 	}
 
 	nav a.contact {
@@ -410,25 +410,54 @@ label b {
 	color: black;
 }
 
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	
+
+}
 
 .card {
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition: 0.3s;
-	width: 40rem;
 	border-radius: 5px;
-	background-color: white;
+	height: 513px;
+	width: 500px;
+	margin-left: 50px;
+	box-shadow: 5px 5px 20px black;
+	overflow: hidden;
+	color: white;
+}
+
+.card img {
+	height: 600px;
+	width: 500px;
+	border-radius: 5px;
+}
+
+.intro {
+	height: 150px;
+	width: 500px;
+	padding: 8px;
+	padding-bottom: 210px;
+	box-sizing: border-box;
+	position: absolute;
+	background: rgb(27, 27, 27, .5);
+	border-radius: 5px;
+	bottom: -30px;
 }
 
 .card:hover {
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-
-.card-container img {
-	border-radius: 5px 5px 0 0;
-	width: 800px;
-
+	cursor: pointer;
 }
-  
-.card-container {
-	padding: 2px 16px;
-  }
+
+.intro2 {
+	height: 150px;
+	width: 500px;
+	padding: 8px;
+	padding-bottom: 210px;
+	box-sizing: border-box;
+	position: absolute;
+	background: rgb(27, 27, 27, .5);
+	border-radius: 5px;
+	bottom: -155vh;
+}
