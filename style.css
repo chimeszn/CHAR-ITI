@@ -439,12 +439,12 @@ label b {
 	height: 150px;
 	width: 500px;
 	padding: 8px;
-	padding-bottom: 210px;
+	padding-bottom: 220px;
 	box-sizing: border-box;
 	position: absolute;
 	background: rgb(27, 27, 27, .5);
 	border-radius: 5px;
-	bottom: -30px;
+	bottom: 45px;
 }
 
 .card:hover {
@@ -460,7 +460,7 @@ label b {
 	position: absolute;
 	background: rgb(27, 27, 27, .5);
 	border-radius: 5px;
-	bottom: -155vh;
+	bottom: -135vh;
 }
 
 
@@ -486,16 +486,6 @@ label b {
 }
 
 
-.intro3 {
-	height: 150px;
-	width: 500px;
-	padding: 8px;
-	padding-bottom: 210px;
-	box-sizing: border-box;
-	position: absolute;
-	border-radius: 5px;
-	bottom: -140px;
-}
 
 .intro3 p {
 	color: black;
